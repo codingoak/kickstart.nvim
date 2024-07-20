@@ -181,6 +181,21 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 -- vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 -- vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
+-- Add a navigation layer to match colemak-dh in normal and visual mode
+vim.keymap.set('n', '<A-m>', 'h') -- Remap m to move left in normal mode
+vim.keymap.set('v', '<A-m>', 'h') -- Remap m to move left in visual mode
+vim.keymap.set('n', '<A-n>', 'j') -- Remap n to move down in normal mode
+vim.keymap.set('v', '<A-n>', 'j') -- Remap n to move down in visual mode
+vim.keymap.set('n', '<A-e>', 'k') -- Remap e to move up in normal mode
+vim.keymap.set('v', '<A-n>', 'j') -- Remap n to move down in visual mode
+vim.keymap.set('n', '<A-i>', 'l') -- Remap i to move right in normal mode
+vim.keymap.set('v', '<A-i>', 'l') -- Remap i to move right in visual mode
+
+vim.keymap.set('n', '<A-h>', 'jjjj') -- Move faster down in normal mode
+vim.keymap.set('v', '<A-h>', 'jjjj') -- Move faster down in visual mode
+vim.keymap.set('n', '<A-,>', 'kkkk') -- Move faster up in normal mode
+vim.keymap.set('v', '<A-,>', 'kkkk') -- Move faster up in visual mode
+
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --
